@@ -1,5 +1,3 @@
-import math
-
 def main():
     # Escribe tu código abajo de esta línea
     a=int(input("Da el valor de a: "))
@@ -13,8 +11,8 @@ def main():
     else:
         discrim=b**2-4*a*c
         if (discrim)>0:
-            x1=(-b+math.sqrt(discrim))/(2*a)
-            x2=(-b-math.sqrt(discrim))/(2*a)
+            x1=(-b+((discrim)**0.5))/(2*a)
+            x2=(-b-((discrim)**0.5))/(2*a)
             print(x1)
             print(x2)
         elif (discrim < 0):
